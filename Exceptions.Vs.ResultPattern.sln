@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35201.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions.Vs.ResultPattern", "Exceptions.Vs.ResultPattern\Exceptions.Vs.ResultPattern.csproj", "{86A83F82-DE8B-43FF-9560-2EAC188C356D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Load Testing", "Load Testing", "{68724D2A-E251-459B-B2F4-E063388B3C9B}"
+	ProjectSection(SolutionItems) = preProject
+		api-test-add-book-v1.js = api-test-add-book-v1.js
+		api-test-add-book-v2.js = api-test-add-book-v2.js
+		api-test-add-book.js = api-test-add-book.js
+		api-test-get-book-v1.js = api-test-get-book-v1.js
+		api-test-get-book-v2.js = api-test-get-book-v2.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86A83F82-DE8B-43FF-9560-2EAC188C356D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A83F82-DE8B-43FF-9560-2EAC188C356D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A83F82-DE8B-43FF-9560-2EAC188C356D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A83F82-DE8B-43FF-9560-2EAC188C356D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72AA5AD4-7BD2-4D19-8E85-2A206994B836}
+	EndGlobalSection
+EndGlobal
