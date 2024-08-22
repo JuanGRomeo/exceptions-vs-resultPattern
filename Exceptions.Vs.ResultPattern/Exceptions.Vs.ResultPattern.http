@@ -1,6 +1,3 @@
 @Exceptions.Vs.ResultPattern_HostAddress = http://localhost:5299
 
-GET {{Exceptions.Vs.ResultPattern_HostAddress}}/weatherforecast/
-Accept: application/json
-
 ###
