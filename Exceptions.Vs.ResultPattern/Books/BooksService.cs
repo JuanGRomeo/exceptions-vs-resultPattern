@@ -16,7 +16,6 @@ namespace Exceptions.Vs.ResultPattern.Books
 
         internal Book AddBookOrThrow(AddBookRequest request)
         {
-            //validate
             var errors = ValidateBook(request);
 
             if (errors.Any())
@@ -24,18 +23,15 @@ namespace Exceptions.Vs.ResultPattern.Books
                 throw new BookValidationException(errors);
             }
 
-            //add book
             var bookId = _books.Select(book => book.Id).Max() + 1;
             var book = new Book(bookId, request.Title, request.Author);
             _books.Add(book);
 
-            //return result
             return Result<Book>.Created(book);
         }
 
         internal Result<Book> AddBookOrFail(AddBookRequest request)
         {
-            //validate
             var errors = ValidateBook(request);
 
             if (errors.Any())
@@ -44,12 +40,10 @@ namespace Exceptions.Vs.ResultPattern.Books
                 return Result<Book>.Invalid(validationErrors);
             }
 
-            //add book
             var bookId = _books.Select(book => book.Id).Max() + 1;
             var book = new Book(bookId, request.Title, request.Author);
             _books.Add(book);
 
-            //return result
             return Result<Book>.Created(book);
         }
 
