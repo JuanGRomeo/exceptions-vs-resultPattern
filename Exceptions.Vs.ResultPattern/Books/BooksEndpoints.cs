@@ -51,5 +51,5 @@
         }
     }
 
-    internal record Book(int Id, string Title, string Author);
+    public record Book(int Id, string Title, string Author);
 }
