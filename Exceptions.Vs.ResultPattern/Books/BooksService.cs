@@ -14,7 +14,7 @@ namespace Exceptions.Vs.ResultPattern.Books
             _books.Add(new Book(3, "The Return of the King", "J.R.R. Tolkien"));
         }
 
-        internal Book AddBookOrThrow(AddBookRequest request)
+        public Book AddBookOrThrow(AddBookRequest request)
         {
             var errors = ValidateBook(request);
 
@@ -30,7 +30,7 @@ namespace Exceptions.Vs.ResultPattern.Books
             return Result<Book>.Created(book);
         }
 
-        internal Result<Book> AddBookOrFail(AddBookRequest request)
+        public Result<Book> AddBookOrFail(AddBookRequest request)
         {
             var errors = ValidateBook(request);
 
@@ -47,7 +47,7 @@ namespace Exceptions.Vs.ResultPattern.Books
             return Result<Book>.Created(book);
         }
 
-        internal Book GetBookOrThrow(int bookId)
+        public Book GetBookOrThrow(int bookId)
         {
             var book = _books.FirstOrDefault(book => book.Id == bookId);
 
@@ -59,7 +59,7 @@ namespace Exceptions.Vs.ResultPattern.Books
             return book;
         }
 
-        internal Result<Book> GetBookOrFail(int bookId)
+        public Result<Book> GetBookOrFail(int bookId)
         {
             var book = _books.FirstOrDefault(book => book.Id == bookId);
 
