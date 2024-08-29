@@ -64,6 +64,7 @@ Around 23469 request per second. **6 times faster** than Exceptions scenario
 1. Set Exceptions.Vs.ResultPattern.PerformanceTests as startup project
 2. Build the solution in Release mode
 3. Run it without debugging (Ctrl + F5)
+4. Check the results in the terminal. Also the results are being exported in HTML and Markdown on ```\Benchmarking.Exceptions.Vs.ResultPattern\bin\Release\net8.0\BenchmarkDotNet.Artifacts\results``` folder
 
 
 
