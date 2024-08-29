@@ -1,8 +1,8 @@
 # Exceptions Vs Result Pattern
 
-Exercise to investigate how costly are exceptions comparing them against a Result Pattern.
+Exercise to investigate K6 Load testing tool and BenchmarkDotNet NuGet package for Load and performance testing doing a comparation between Exceptions and a Result Pattern.
 
-It has been used K6 framework for Load testing and BenchmarkDotNet NuGet package for performance testing.
+The results of this tests does not imply Exceptions should never being used neither Result Pattern has to be implemented always. Each technique should be used properly attached to the use case.
 
 ## Description
 
@@ -12,7 +12,6 @@ Having two endpoints that do the same thing, one using exceptions and the other 
 
 1. We simulate ramp-up of traffic from 1 to 20 users over 10 seconds.
 2. Stay at 20 users for 50 seconds 
-
 
 ### How To Execute them
 
@@ -65,7 +64,6 @@ Around 23469 request per second. **6 times faster** than Exceptions scenario
 2. Build the solution in Release mode
 3. Run it without debugging (Ctrl + F5)
 4. Check the results in the terminal. Also the results are being exported in HTML and Markdown on ```\Benchmarking.Exceptions.Vs.ResultPattern\bin\Release\net8.0\BenchmarkDotNet.Artifacts\results``` folder
-
 
 
 ## Results
