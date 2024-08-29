@@ -14,6 +14,18 @@ Having two endpoints that do the same thing, one using exceptions and the other 
 2. Stay at 20 users for 50 seconds 
 
 
+### How To Execute them
+
+1. Assure you have k6 installed. If not, you can download it from [here](https://k6.io/docs/getting-started/installation/)
+2. Set Exceptions.Vs.ResultPattern.Api as startup project
+3. Run it without debugging (Ctrl + F5)
+4. Open a terminal and navigate to the root of the project
+5. Run the following command to execute the load test scenario you want to test. Assure you pass the correct file name.
+	```bash
+	k6 run api-test-add-book-v1.js
+	```
+6. Check the results in the terminal
+
 ## Results
 
 ### Get unexisting book using Exceptions
@@ -45,8 +57,17 @@ Around 23469 request per second. **6 times faster** than Exceptions scenario
 
 ---
 
-### Performance Test Scenario Results
+## Performance Test Scenario
 
+### How To Execute them
+
+1. Set Exceptions.Vs.ResultPattern.PerformanceTests as startup project
+2. Build the solution in Release mode
+3. Run it without debugging (Ctrl + F5)
+
+
+
+## Results
 
 BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.4112/23H2/2023Update/SunValley3)
 12th Gen Intel Core i5-1240P, 1 CPU, 16 logical and 12 physical cores
