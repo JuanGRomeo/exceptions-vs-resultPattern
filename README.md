@@ -3,6 +3,10 @@
 Exercise to investigate K6 Load testing tool and BenchmarkDotNet NuGet package for Load and performance testing doing a comparation between Exceptions and a Result Pattern.
 
 The results of this tests does not imply Exceptions should never being used neither Result Pattern has to be implemented always. Each technique should be used properly attached to the use case.
+To read moare about that discussion:
+- https://martinfowler.com/articles/replaceThrowWithNotification.html
+- https://www.reddit.com/r/csharp/comments/1aoz4b0/result_pattern_vs_exceptions_pros_cons/
+- https://www.reddit.com/r/dotnet/comments/11751gx/exceptions_vs_result_pattern/
 
 ## Description
 
